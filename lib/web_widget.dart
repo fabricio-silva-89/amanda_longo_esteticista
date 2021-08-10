@@ -1,3 +1,4 @@
+import 'package:amanda_longo_esteticista/section/about_section.dart';
 import 'package:amanda_longo_esteticista/section/home_section.dart';
 import 'package:flutter/material.dart';
 
@@ -8,7 +9,16 @@ class WebWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Amanda Longo Esteticista",
-      home: HomePage(),
+      home: Scaffold(
+        body: SingleChildScrollView(
+          child: Column(
+            children: [
+              HomeSection(),
+              AboutSection(),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
