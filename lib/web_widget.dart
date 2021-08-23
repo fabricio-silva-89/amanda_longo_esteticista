@@ -1,5 +1,6 @@
 import 'package:amanda_longo_esteticista/section/about_section.dart';
 import 'package:amanda_longo_esteticista/section/home_section.dart';
+import 'package:amanda_longo_esteticista/widget/header_widget.dart';
 import 'package:flutter/material.dart';
 
 class WebWidget extends StatelessWidget {
@@ -10,6 +11,10 @@ class WebWidget extends StatelessWidget {
     return MaterialApp(
       title: "Amanda Longo Esteticista",
       home: Scaffold(
+        appBar: PreferredSize(
+          preferredSize: Size.fromHeight(30),
+          child: HeaderWidget(),
+        ),
         body: SingleChildScrollView(
           child: Column(
             children: [

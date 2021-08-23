@@ -1,4 +1,5 @@
 import 'package:amanda_longo_esteticista/shared/web_images.dart';
+import 'package:amanda_longo_esteticista/shared/web_text_styles.dart';
 import 'package:flutter/material.dart';
 
 import 'package:amanda_longo_esteticista/shared/web_gradients.dart';
@@ -26,12 +27,12 @@ class HeaderWidget extends StatelessWidget {
                 children: [
                   Text(
                     "amandacrislongo@gmail.com",
-                    style: TextStyle(color: Colors.white),
+                    style: WebTextStyles.header,
                   ),
                   SizedBox(width: 24),
                   Text(
                     "(17) 99659-8330",
-                    style: TextStyle(color: Colors.white),
+                    style: WebTextStyles.header,
                   ),
                 ],
               ),

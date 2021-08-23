@@ -9,11 +9,12 @@ class HomeSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
+    double height = 628;
 
     return Container(
       alignment: Alignment.center,
       width: double.infinity,
-      height: 658,
+      height: height,
       decoration: BoxDecoration(
         image: DecorationImage(
           image: AssetImage(
@@ -27,22 +28,18 @@ class HomeSection extends StatelessWidget {
           children: [
             Positioned(
               top: 0,
-              left: 0,
-              child: HeaderWidget(),
-            ),
-            Positioned(
-              top: 30,
-              left: (size.width - 1200) / 2,
+              left: (size.width - 1100) / 2,
               child: Container(
-                width: 1200,
+                width: 1100,
+                height: height,
                 child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Image.asset(
                       WebImages.logo,
-                      width: 240,
                       fit: BoxFit.cover,
                     ),
-                    SizedBox(height: 24),
+                    SizedBox(height: 16),
                     Text(
                       "Renove a sua autoestima",
                       style: WebTextStyles.titleHome,
