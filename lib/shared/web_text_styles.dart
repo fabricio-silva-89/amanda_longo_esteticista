@@ -7,7 +7,7 @@ class WebTextStyles {
   static final titleHome = GoogleFonts.libreBaskerville(
     fontSize: 52,
     fontWeight: FontWeight.w600,
-    color: WebColors.text,
+    color: WebColors.secondary,
   );
 
   static final titleAbout = GoogleFonts.libreBaskerville(

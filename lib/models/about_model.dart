@@ -1,5 +1,5 @@
 class AboutModel {
-  static const titleAbout = "Dra. Amanda Longo";
+  static const titleAbout = "Amanda Longo";
   static const descriptionAbout =
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. " +
           "Nunc pretium vehicula nibh, ac imperdiet magna molestie ac. " +

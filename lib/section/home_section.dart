@@ -1,3 +1,4 @@
+import 'package:amanda_longo_esteticista/shared/web_colors_opacity.dart';
 import 'package:amanda_longo_esteticista/shared/web_images.dart';
 import 'package:amanda_longo_esteticista/shared/web_text_styles.dart';
 import 'package:amanda_longo_esteticista/widget/header_widget.dart';
@@ -37,13 +38,10 @@ class HomeSection extends StatelessWidget {
                   children: [
                     Image.asset(
                       WebImages.logo,
+                      width: size.width > 1100 ? 750 : size.width * 0.67,
                       fit: BoxFit.cover,
                     ),
                     SizedBox(height: 16),
-                    Text(
-                      "Renove a sua autoestima",
-                      style: WebTextStyles.titleHome,
-                    )
                   ],
                 ),
               ),
