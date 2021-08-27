@@ -39,7 +39,7 @@ List<ServicesModel> services = [
   ServicesModel(
     id: 4,
     type: "corporal",
-    title: "Knésio Taping",
+    title: "Kinesio Taping",
     description: "",
     image: "",
   ),
