@@ -1,3 +1,5 @@
+import 'package:amanda_longo_esteticista/shared/web_images.dart';
+
 class ServicesModel {
   final int id;
   final String type;
@@ -19,71 +21,81 @@ List<ServicesModel> services = [
     id: 1,
     type: "corporal",
     title: "Drenagem Linfática",
-    description: "",
-    image: "",
+    description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt ligula odio, vel iaculis orci sodales ut.",
+    image: WebImages.vessel_icon,
   ),
   ServicesModel(
     id: 2,
     type: "corporal",
     title: "Massagem Relaxante",
-    description: "",
-    image: "",
+    description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt ligula odio, vel iaculis orci sodales ut.",
+    image: WebImages.massage_icon,
   ),
   ServicesModel(
     id: 3,
     type: "corporal",
     title: "Ventosoterapia",
-    description: "",
-    image: "",
+    description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt ligula odio, vel iaculis orci sodales ut.",
+    image: WebImages.cupping_icon,
   ),
   ServicesModel(
     id: 4,
     type: "corporal",
     title: "Kinesio Taping",
-    description: "",
-    image: "",
+    description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt ligula odio, vel iaculis orci sodales ut.",
+    image: WebImages.tape_icon,
   ),
   ServicesModel(
     id: 5,
     type: "corporal",
     title: "Pré e Pós Operatório",
-    description: "",
-    image: "",
+    description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt ligula odio, vel iaculis orci sodales ut.",
+    image: WebImages.operation_icon,
   ),
   ServicesModel(
     id: 6,
     type: "corporal",
     title: "Detox",
-    description: "",
-    image: "",
+    description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt ligula odio, vel iaculis orci sodales ut.",
+    image: WebImages.detox_icon,
   ),
   ServicesModel(
     id: 7,
     type: "corporal",
     title: "Estrias",
-    description: "",
-    image: "",
+    description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt ligula odio, vel iaculis orci sodales ut.",
+    image: WebImages.stretch_marks_icon,
   ),
   ServicesModel(
     id: 8,
     type: "corporal",
     title: "Sem Celulite",
-    description: "",
-    image: "",
+    description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt ligula odio, vel iaculis orci sodales ut.",
+    image: WebImages.cellulitis_icon,
   ),
   ServicesModel(
     id: 9,
     type: "corporal",
     title: "Sem Flacidez",
-    description: "",
-    image: "",
+    description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt ligula odio, vel iaculis orci sodales ut.",
+    image: WebImages.fat_icon,
   ),
   ServicesModel(
     id: 10,
     type: "corporal",
     title: "Modelagem do Bumbum",
-    description: "",
-    image: "",
+    description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt ligula odio, vel iaculis orci sodales ut.",
+    image: WebImages.butt_icon,
   ),
   ServicesModel(
     id: 11,
