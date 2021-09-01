@@ -5,6 +5,6 @@ class WebColors {
   static final secondary = Color(0xFF00715F);
   static final background = Color(0xFFFFFFFF);
   static final grey = Color(0xFFF5F5F5);
-  static final text = Color(0xFF242424);
+  static final text = Color(0xFF656d6d);
   static final white = Color(0xFFFFFFFF);
 }

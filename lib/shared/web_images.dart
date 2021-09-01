@@ -15,4 +15,10 @@ class WebImages {
   static const stretch_marks_icon = "assets/images/stretch-marks.png";
   static const tape_icon = "assets/images/tape.png";
   static const vessel_icon = "assets/images/vessel.png";
+  static const limpeza_pele_icon = "assets/images/facial-treatment.png";
+  static const peeling_icon = "assets/images/peeling.png";
+  static const microagulhamento_icon = "assets/images/microagulhamento.png";
+  static const relaxante_facial_icon = "assets/images/relaxante_facial.png";
+  static const rejuvenescimento_icon = "assets/images/rejuvenescimento.png";
+  static const lotion_icon = "assets/images/lotion.png";
 }

@@ -101,49 +101,56 @@ List<ServicesModel> services = [
     id: 11,
     type: "facial",
     title: "Limpeza de Pele",
-    description: "",
-    image: "",
+    description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt ligula odio, vel iaculis orci sodales ut.",
+    image: WebImages.limpeza_pele_icon,
   ),
   ServicesModel(
     id: 12,
     type: "facial",
     title: "Peeling Diamante",
-    description: "",
-    image: "",
+    description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt ligula odio, vel iaculis orci sodales ut.",
+    image: WebImages.peeling_icon,
   ),
   ServicesModel(
     id: 13,
     type: "facial",
     title: "Microagulhamento Facial",
-    description: "",
-    image: "",
+    description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt ligula odio, vel iaculis orci sodales ut.",
+    image: WebImages.microagulhamento_icon,
   ),
   ServicesModel(
     id: 14,
     type: "facial",
     title: "Drenagem Linfática Facial",
-    description: "",
-    image: "",
+    description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt ligula odio, vel iaculis orci sodales ut.",
+    image: WebImages.vessel_icon,
   ),
   ServicesModel(
     id: 15,
     type: "facial",
     title: "Relaxante Facial",
-    description: "",
-    image: "",
+    description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt ligula odio, vel iaculis orci sodales ut.",
+    image: WebImages.relaxante_facial_icon,
   ),
   ServicesModel(
     id: 16,
     type: "facial",
     title: "Rejuvenescimento Facial",
-    description: "",
-    image: "",
+    description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt ligula odio, vel iaculis orci sodales ut.",
+    image: WebImages.rejuvenescimento_icon,
   ),
   ServicesModel(
     id: 17,
     type: "facial",
     title: "Hidratação Fios de Seda",
-    description: "",
-    image: "",
+    description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt ligula odio, vel iaculis orci sodales ut.",
+    image: WebImages.lotion_icon,
   ),
 ];

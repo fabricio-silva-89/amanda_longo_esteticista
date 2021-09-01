@@ -16,6 +16,30 @@ class WebTextStyles {
     color: WebColors.secondary,
   );
 
+  static final titleService = GoogleFonts.libreBaskerville(
+    fontSize: 52,
+    fontWeight: FontWeight.w600,
+    color: WebColors.text,
+  );
+
+  static final subtitleService = GoogleFonts.poppins(
+    fontSize: 36,
+    fontWeight: FontWeight.w600,
+    color: WebColors.secondary,
+  );
+
+  static final itemService = GoogleFonts.poppins(
+    fontSize: 24,
+    fontWeight: FontWeight.w600,
+    color: WebColors.secondary,
+  );
+
+  static final bodyService = GoogleFonts.poppins(
+    fontSize: 16,
+    fontWeight: FontWeight.normal,
+    color: WebColors.text,
+  );
+
   static final bodyAbout = GoogleFonts.poppins(
     fontSize: 16,
     fontWeight: FontWeight.normal,
