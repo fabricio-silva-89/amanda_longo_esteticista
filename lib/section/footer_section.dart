@@ -1,11 +1,10 @@
+import 'package:amanda_longo_esteticista/shared/web_gradients.dart';
 import 'package:amanda_longo_esteticista/shared/web_images.dart';
 import 'package:amanda_longo_esteticista/shared/web_text_styles.dart';
 import 'package:flutter/material.dart';
 
-import 'package:amanda_longo_esteticista/shared/web_gradients.dart';
-
-class HeaderWidget extends StatelessWidget {
-  const HeaderWidget({Key? key}) : super(key: key);
+class FooterSection extends StatelessWidget {
+  const FooterSection({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -13,10 +12,10 @@ class HeaderWidget extends StatelessWidget {
 
     return Container(
       width: size.width,
-      height: 30,
+      height: 60,
       alignment: Alignment.center,
       decoration: BoxDecoration(
-        gradient: WebGradients.linear,
+        gradient: WebGradients.linearLeft,
       ),
       child: Container(
         width: 1100,
@@ -24,22 +23,6 @@ class HeaderWidget extends StatelessWidget {
           children: [
             Expanded(
               child: Row(
-                children: [
-                  Text(
-                    "amandacrislongo@gmail.com",
-                    style: WebTextStyles.header,
-                  ),
-                  SizedBox(width: 24),
-                  Text(
-                    "(17) 99659-8330",
-                    style: WebTextStyles.header,
-                  ),
-                ],
-              ),
-            ),
-            Expanded(
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   InkWell(
                     onTap: () {},
@@ -56,6 +39,12 @@ class HeaderWidget extends StatelessWidget {
                     child: Image.asset(WebImages.linkedin_icon),
                   ),
                 ],
+              ),
+            ),
+            Expanded(
+              child: Container(
+                child: Text("Desenvolvido por Fabrício Silva",
+                    style: WebTextStyles.header),
               ),
             )
           ],

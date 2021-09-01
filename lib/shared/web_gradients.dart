@@ -11,4 +11,12 @@ class WebGradients {
     0.0,
     0.695
   ], transform: GradientRotation(2.13959913 * pi));
+
+  static final linearLeft = LinearGradient(colors: [
+    WebColors.primary,
+    WebColors.secondary,
+  ], stops: [
+    0.0,
+    0.695
+  ], transform: GradientRotation(2.13959913 * pi));
 }
