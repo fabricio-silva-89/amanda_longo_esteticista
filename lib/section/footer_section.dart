@@ -44,7 +44,7 @@ class FooterSection extends StatelessWidget {
             Expanded(
               child: Container(
                 child: Text("Desenvolvido por Fabrício Silva",
-                    style: WebTextStyles.header),
+                    textAlign: TextAlign.right, style: WebTextStyles.header),
               ),
             )
           ],

@@ -20,9 +20,9 @@ class WebWidget extends StatelessWidget {
         body: SingleChildScrollView(
           child: Column(
             children: [
-              HomeSection(),
-              ServicesSection(),
-              AboutSection(),
+              // HomeSection(),
+              // ServicesSection(),
+              // AboutSection(),
               FooterSection(),
             ],
           ),
