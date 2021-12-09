@@ -40,6 +40,12 @@ class WebTextStyles {
     color: WebColors.text,
   );
 
+  static final bodyContact = GoogleFonts.poppins(
+    fontSize: 20,
+    fontWeight: FontWeight.bold,
+    color: WebColors.text,
+  );
+
   static final bodyAbout = GoogleFonts.poppins(
     fontSize: 16,
     fontWeight: FontWeight.normal,

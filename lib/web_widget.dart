@@ -1,4 +1,5 @@
 import 'package:amanda_longo_esteticista/section/about_section.dart';
+import 'package:amanda_longo_esteticista/section/contact_section.dart';
 import 'package:amanda_longo_esteticista/section/footer_section.dart';
 import 'package:amanda_longo_esteticista/section/home_section.dart';
 import 'package:amanda_longo_esteticista/section/services_section.dart';
@@ -20,9 +21,10 @@ class WebWidget extends StatelessWidget {
         body: SingleChildScrollView(
           child: Column(
             children: [
-              // HomeSection(),
-              // ServicesSection(),
-              // AboutSection(),
+              HomeSection(),
+              ServicesSection(),
+              AboutSection(),
+              ContactSection(),
               FooterSection(),
             ],
           ),

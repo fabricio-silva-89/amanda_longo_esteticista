@@ -21,4 +21,8 @@ class WebImages {
   static const relaxante_facial_icon = "assets/images/relaxante_facial.png";
   static const rejuvenescimento_icon = "assets/images/rejuvenescimento.png";
   static const lotion_icon = "assets/images/lotion.png";
+  static const wallpaper_contact = "assets/images/wallpaper_contact.jpg";
+  static const email = "assets/images/email.png";
+  static const adress = "assets/images/maps-and-flags.png";
+  static const whatsapp = "assets/images/whatsapp.png";
 }
