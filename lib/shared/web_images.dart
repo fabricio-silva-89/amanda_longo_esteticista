@@ -22,7 +22,8 @@ class WebImages {
   static const rejuvenescimento_icon = "assets/images/rejuvenescimento.png";
   static const lotion_icon = "assets/images/lotion.png";
   static const wallpaper_contact = "assets/images/wallpaper_contact.jpg";
-  static const email = "assets/images/email.png";
-  static const adress = "assets/images/maps-and-flags.png";
-  static const whatsapp = "assets/images/whatsapp.png";
+  static const email = "assets/images/email32.png";
+  static const adress = "assets/images/map32.png";
+  static const whatsapp = "assets/images/whatsapp32.png";
+  static const instagram_contact = "assets/images/instagram32.png";
 }

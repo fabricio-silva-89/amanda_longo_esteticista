@@ -10,7 +10,7 @@ class ContactSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    double height = 480;
+    double height = 540;
 
     return Container(
       width: size.width,
@@ -61,15 +61,15 @@ class ContactSection extends StatelessWidget {
                           decoration: BoxDecoration(
                             color: WebColors.secondary,
                             borderRadius: BorderRadius.circular(32),
+                            image: DecorationImage(
+                              image: AssetImage(WebImages.instagram_contact),
+                            ),
                           ),
                         ),
                         SizedBox(width: 24),
-                        SizedBox(
-                          width: size.width * 0.5,
-                          child: Text(
-                            'R. Orsini Dias Águiar, 197 - Jardim Alvorada, São José do Rio Preto - SP, 15020-070',
-                            style: WebTextStyles.bodyContact,
-                          ),
+                        Text(
+                          '@amandacrislongo',
+                          style: WebTextStyles.bodyContact,
                         ),
                       ],
                     ),
@@ -82,6 +82,9 @@ class ContactSection extends StatelessWidget {
                           decoration: BoxDecoration(
                             color: WebColors.secondary,
                             borderRadius: BorderRadius.circular(32),
+                            image: DecorationImage(
+                              image: AssetImage(WebImages.email),
+                            ),
                           ),
                         ),
                         SizedBox(width: 24),
@@ -100,12 +103,39 @@ class ContactSection extends StatelessWidget {
                           decoration: BoxDecoration(
                             color: WebColors.secondary,
                             borderRadius: BorderRadius.circular(32),
+                            image: DecorationImage(
+                              image: AssetImage(WebImages.whatsapp),
+                            ),
                           ),
                         ),
                         SizedBox(width: 24),
                         Text(
                           '(17) 99605-1233',
                           style: WebTextStyles.bodyContact,
+                        ),
+                      ],
+                    ),
+                    SizedBox(height: 24),
+                    Row(
+                      children: [
+                        Container(
+                          width: 64,
+                          height: 64,
+                          decoration: BoxDecoration(
+                            color: WebColors.secondary,
+                            borderRadius: BorderRadius.circular(32),
+                            image: DecorationImage(
+                              image: AssetImage(WebImages.adress),
+                            ),
+                          ),
+                        ),
+                        SizedBox(width: 24),
+                        SizedBox(
+                          width: size.width * 0.5,
+                          child: Text(
+                            'R. Orsini Dias Águiar, 197 - Jardim Alvorada, São José do Rio Preto - SP, 15020-070',
+                            style: WebTextStyles.bodyContact,
+                          ),
                         ),
                       ],
                     ),
