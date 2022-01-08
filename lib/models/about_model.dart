@@ -1,15 +1,15 @@
 class AboutModel {
   static const titleAbout = "Amanda Longo";
   static const descriptionAbout =
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. " +
-          "Nunc pretium vehicula nibh, ac imperdiet magna molestie ac. " +
-          "Nulla aliquet vestibulum diam non hendrerit. " +
-          "Aenean imperdiet dui nisi, sit amet mollis ligula tincidunt eu. \n\n" +
-          "Proin lacinia laoreet augue. Praesent eleifend a massa vel pellentesque. " +
-          "Integer dignissim tellus augue, sit amet placerat augue pulvinar non. " +
-          "Interdum et malesuada fames ac ante ipsum primis in faucibus. " +
-          "Nam euismod augue in ipsum venenatis, in aliquam enim faucibus. " +
-          "Ut in molestie metus. Sed lectus nisl, dignissim et mi lacinia, " +
-          "eleifend condimentum felis. Ut eleifend ligula et blandit viverra. " +
-          "Phasellus malesuada tempus est eu suscipit. Aliquam eu dignissim est.";
+      "Especializada em massagem corporal e facial, radiofrequência, limpeza de pele, " +
+          "microagulhamento, peeling de diamante, ultrassom e vários outros tipos de procedimentos " +
+          "e tratamentos, que leva a clínica a ser um potencial ainda melhor para os(as) pacientes " +
+          "na área da estética.\n\n" +
+          "A Amanda Longo Esteticista surgiu há 4 anos, onde começou sua carreira na cidade de Tabapuã / SP, " +
+          "e se encontra na cidade de São José do Rio Preto / SP.\n\n" +
+          "Nesse tempo, a clínica veio para deixar nossos(as) pacientes aconchegantes e com a alto-estima lá em cima " +
+          "com os resultados desejados\n\n" +
+          "Afinal, estética nada mais é que saúde para o nosso corpo e mente, onde os resultados aparecem de dentro para fora.\n\n" +
+          "Seja qual for o tratamento indicado, manual ou tecnológico, eles devem se encaixar com a necessidade do seu corpo " +
+          "trazendo os resultados.";
 }

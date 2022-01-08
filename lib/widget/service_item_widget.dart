@@ -16,6 +16,8 @@ class ServiceItemWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
+
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -33,13 +35,18 @@ class ServiceItemWidget extends StatelessWidget {
         SizedBox(width: 24),
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            Text(title, style: WebTextStyles.itemService),
-            SizedBox(height: 12),
-            Container(
-              width: (1100 / 2) - 168,
+            Text(
+              title,
+              style: WebTextStyles.itemService,
+            ),
+            SizedBox(height: 8),
+            SizedBox(
+              width: size.width > 1200 ? (1100 - 240) / 2 : (size.width - 240),
               child: Text(description, style: WebTextStyles.bodyService),
             ),
+            SizedBox(height: 32),
           ],
         ),
       ],

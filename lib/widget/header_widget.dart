@@ -18,17 +18,17 @@ class HeaderWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
+    final size = MediaQuery.of(context).size;
+    final height = 30.0;
 
     return Container(
       width: size.width,
-      height: 30,
-      alignment: Alignment.center,
+      height: height,
       decoration: BoxDecoration(
         gradient: WebGradients.linear,
       ),
-      child: Container(
-        width: 1100,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 32),
         child: Row(
           children: [
             Expanded(

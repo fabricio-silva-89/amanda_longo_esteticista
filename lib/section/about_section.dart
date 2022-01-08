@@ -3,6 +3,8 @@ import 'package:amanda_longo_esteticista/shared/web_colors.dart';
 import 'package:amanda_longo_esteticista/shared/web_colors_opacity.dart';
 import 'package:amanda_longo_esteticista/shared/web_images.dart';
 import 'package:amanda_longo_esteticista/shared/web_text_styles.dart';
+import 'package:amanda_longo_esteticista/widget/content_about_widget.dart';
+import 'package:amanda_longo_esteticista/widget/title_section_widget.dart';
 import 'package:flutter/material.dart';
 
 class AboutSection extends StatelessWidget {
@@ -11,57 +13,77 @@ class AboutSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    double height = 628;
 
     return Container(
-      alignment: Alignment.center,
       width: size.width,
-      height: height,
       color: WebColorsOpacity.primary25,
-      child: Stack(
-        children: [
-          Positioned(
-            top: 30,
-            left: (size.width - 1100) / 2,
-            child: Container(
-              width: 600,
-              height: height,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.center,
+      child: Padding(
+        padding: const EdgeInsets.all(32.0),
+        child: size.width > 1200
+            ? Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  Text(AboutModel.titleAbout, style: WebTextStyles.titleAbout),
-                  SizedBox(height: 36),
-                  Container(
-                    width: 250,
-                    height: 1,
-                    color: WebColors.secondary,
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      TitleSectionWidget(
+                        text: 'Amanda Longo',
+                        style: WebTextStyles.titleAbout,
+                        color: WebColors.secondary,
+                        isCenter: false,
+                      ),
+                      ContentAboutWiget(
+                        text: AboutModel.descriptionAbout,
+                        style: WebTextStyles.bodyAbout,
+                      )
+                    ],
                   ),
-                  SizedBox(height: 36),
-                  Text(AboutModel.descriptionAbout,
-                      style: WebTextStyles.bodyAbout),
+                  Container(
+                    height: 500,
+                    width: 400,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(24),
+                      image: DecorationImage(
+                        image: AssetImage(
+                          WebImages.photo_about,
+                        ),
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ),
+                ],
+              )
+            : Column(
+                children: [
+                  Container(
+                    height: 300,
+                    width: 300,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(24),
+                      image: DecorationImage(
+                        image: AssetImage(
+                          WebImages.photo_about,
+                        ),
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: 32),
+                  Column(
+                    children: [
+                      TitleSectionWidget(
+                        text: 'Amanda Longo',
+                        style: WebTextStyles.titleAbout,
+                        color: WebColors.secondary,
+                      ),
+                      ContentAboutWiget(
+                        text: AboutModel.descriptionAbout,
+                        style: WebTextStyles.bodyAbout,
+                      )
+                    ],
+                  ),
                 ],
               ),
-            ),
-          ),
-          Positioned(
-            top: (height - 500) / 2,
-            right: (size.width - 1100) / 2,
-            child: Container(
-              height: 500,
-              width: 400,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(24),
-                image: DecorationImage(
-                  image: AssetImage(
-                    WebImages.photo_about,
-                  ),
-                  fit: BoxFit.cover,
-                ),
-              ),
-            ),
-          ),
-        ],
       ),
     );
   }
