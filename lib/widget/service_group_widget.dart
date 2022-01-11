@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:amanda_longo_esteticista/models/services_model.dart';
-import 'package:amanda_longo_esteticista/shared/web_colors.dart';
-import 'package:amanda_longo_esteticista/shared/web_text_styles.dart';
 import 'package:amanda_longo_esteticista/widget/service_item_widget.dart';
-import 'package:amanda_longo_esteticista/widget/subtitle_section_widget.dart';
 
 class ServiceGroup extends StatelessWidget {
   final String title;
