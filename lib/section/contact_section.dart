@@ -5,9 +5,18 @@ import 'package:amanda_longo_esteticista/shared/web_text_styles.dart';
 import 'package:amanda_longo_esteticista/widget/contact_item_widget.dart';
 import 'package:amanda_longo_esteticista/widget/title_section_widget.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class ContactSection extends StatelessWidget {
   const ContactSection({Key? key}) : super(key: key);
+
+  void _urlLaunch(String url) async {
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +24,6 @@ class ContactSection extends StatelessWidget {
 
     return Container(
       width: size.width,
-      height: size.height,
       decoration: BoxDecoration(
         color: WebColorsOpacity.withe25,
         image: const DecorationImage(
@@ -38,149 +46,30 @@ class ContactSection extends StatelessWidget {
               ContactItemWidget(
                 text: '@amandacrislongo',
                 image: WebImages.instagram_contact,
+                onTap: () {},
               ),
               ContactItemWidget(
                 text: 'amandacrislongo@gmail.com',
                 image: WebImages.email,
+                onTap: () {},
               ),
               ContactItemWidget(
                 text: '(17) 99605-1233',
                 image: WebImages.whatsapp,
+                onTap: () => _urlLaunch(
+                    'https://api.whatsapp.com/send/?phone=5517996051233&text&app_absent=0'),
               ),
               ContactItemWidget(
                 text:
                     'R. Orsini Dias Águiar, 197 - Jardim Alvorada, São José do Rio Preto - SP, 15020-070',
                 image: WebImages.adress,
+                onTap: () => _urlLaunch(
+                    'https://www.google.com/maps/place/R.+Orsini+Dias+Águiar,+197+-+Jardim+Alvorada,+São+José+do+Rio+Preto+-+SP,+15020-070'),
               ),
             ],
           ),
         ),
       ),
-      // child: Stack(
-      //   children: [
-      //     Positioned(
-      //       top: 0,
-      //       left: 0,
-      //       child: Container(
-      //         width: size.width,
-      //         color: WebColorsOpacity.withe25,
-      //       ),
-      //     ),
-      //     Positioned(
-      //       top: 0,
-      //       left: size.width * 0.5 / 2,
-      //       child: Column(
-      //         children: [
-      //           SizedBox(height: 36),
-      //           Text(
-      //             "Contato",
-      //             style: WebTextStyles.titleService,
-      //           ),
-      //           SizedBox(height: 36),
-      //           Container(
-      //             width: 250,
-      //             height: 1,
-      //             color: WebColors.text,
-      //           ),
-      //           SizedBox(height: 36),
-      //           Column(
-      //             crossAxisAlignment: CrossAxisAlignment.start,
-      //             mainAxisAlignment: MainAxisAlignment.spaceAround,
-      //             children: [
-      //               Row(
-      //                 children: [
-      //                   Container(
-      //                     width: 64,
-      //                     height: 64,
-      //                     decoration: BoxDecoration(
-      //                       color: WebColors.secondary,
-      //                       borderRadius: BorderRadius.circular(32),
-      //                       image: DecorationImage(
-      //                         image: AssetImage(WebImages.instagram_contact),
-      //                       ),
-      //                     ),
-      //                   ),
-      //                   SizedBox(width: 24),
-      //                   Text(
-      //                     '@amandacrislongo',
-      //                     style: WebTextStyles.bodyContact,
-      //                   ),
-      //                 ],
-      //               ),
-      //               SizedBox(height: 24),
-      //               Row(
-      //                 children: [
-      //                   Container(
-      //                     width: 64,
-      //                     height: 64,
-      //                     decoration: BoxDecoration(
-      //                       color: WebColors.secondary,
-      //                       borderRadius: BorderRadius.circular(32),
-      //                       image: DecorationImage(
-      //                         image: AssetImage(WebImages.email),
-      //                       ),
-      //                     ),
-      //                   ),
-      //                   SizedBox(width: 24),
-      //                   Text(
-      //                     'amandacrislongo@gmail.com',
-      //                     style: WebTextStyles.bodyContact,
-      //                   ),
-      //                 ],
-      //               ),
-      //               SizedBox(height: 24),
-      //               Row(
-      //                 children: [
-      //                   Container(
-      //                     width: 64,
-      //                     height: 64,
-      //                     decoration: BoxDecoration(
-      //                       color: WebColors.secondary,
-      //                       borderRadius: BorderRadius.circular(32),
-      //                       image: DecorationImage(
-      //                         image: AssetImage(WebImages.whatsapp),
-      //                       ),
-      //                     ),
-      //                   ),
-      //                   SizedBox(width: 24),
-      //                   Text(
-      //                     '(17) 99605-1233',
-      //                     style: WebTextStyles.bodyContact,
-      //                   ),
-      //                 ],
-      //               ),
-      //               SizedBox(height: 24),
-      //               Row(
-      //                 children: [
-      //                   Container(
-      //                     width: 64,
-      //                     height: 64,
-      //                     decoration: BoxDecoration(
-      //                       color: WebColors.secondary,
-      //                       borderRadius: BorderRadius.circular(32),
-      //                       image: DecorationImage(
-      //                         image: AssetImage(WebImages.adress),
-      //                       ),
-      //                     ),
-      //                   ),
-      //                   SizedBox(width: 24),
-      //                   SizedBox(
-      //                     width: size.width * 0.5,
-      //                     child: Text(
-      //                       'R. Orsini Dias Águiar, 197 - Jardim Alvorada, São José do Rio Preto - SP, 15020-070',
-      //                       style: WebTextStyles.bodyContact,
-      //                     ),
-      //                   ),
-      //                 ],
-      //               ),
-      //             ],
-      //           ),
-      //           SizedBox(height: 36),
-      //         ],
-      //       ),
-      //     ),
-      //   ],
-      // ),
     );
   }
 }

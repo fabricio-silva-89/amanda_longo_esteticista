@@ -26,39 +26,52 @@ class FooterSection extends StatelessWidget {
       decoration: BoxDecoration(
         gradient: WebGradients.linearLeft,
       ),
-      child: Container(
-        width: 1100,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 32),
         child: Row(
           children: [
+            if (size.width > 800)
+              Expanded(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    InkWell(
+                      onTap: () => _urlLaunch(
+                          'https://www.instagram.com/amandacrislongo/'),
+                      child: Image.asset(WebImages.instagram_icon),
+                    ),
+                    SizedBox(width: 24),
+                    InkWell(
+                      onTap: () => _urlLaunch(
+                          'https://www.facebook.com/amandacrislongo/'),
+                      child: Image.asset(WebImages.facebook_icon),
+                    ),
+                    SizedBox(width: 24),
+                    InkWell(
+                      onTap: () => _urlLaunch(
+                          'https://www.linkedin.com/in/amanda-longo-980947159/'),
+                      child: Image.asset(WebImages.linkedin_icon),
+                    ),
+                  ],
+                ),
+              ),
             Expanded(
               child: Row(
+                mainAxisAlignment: size.width > 800
+                    ? MainAxisAlignment.end
+                    : MainAxisAlignment.center,
                 children: [
                   InkWell(
-                    onTap: () => _urlLaunch(
-                        'https://www.instagram.com/amandacrislongo/'),
-                    child: Image.asset(WebImages.instagram_icon),
-                  ),
-                  SizedBox(width: 24),
-                  InkWell(
                     onTap: () =>
-                        _urlLaunch('https://www.facebook.com/amandacrislongo/'),
-                    child: Image.asset(WebImages.facebook_icon),
-                  ),
-                  SizedBox(width: 24),
-                  InkWell(
-                    onTap: () => _urlLaunch(
-                        'https://www.linkedin.com/in/amanda-longo-980947159/'),
-                    child: Image.asset(WebImages.linkedin_icon),
+                        _urlLaunch('https://www.linkedin.com/in/fabrício-s/'),
+                    child: Text(
+                      "Desenvolvido por Fabrício Silva",
+                      style: WebTextStyles.header,
+                    ),
                   ),
                 ],
               ),
             ),
-            Expanded(
-              child: Container(
-                child: Text("Desenvolvido por Fabrício Silva",
-                    textAlign: TextAlign.right, style: WebTextStyles.header),
-              ),
-            )
           ],
         ),
       ),

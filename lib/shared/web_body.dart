@@ -23,11 +23,11 @@ class WebBody extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            // HomeSection(),
-            // ServicesSection(),
-            // AboutSection(),
+            HomeSection(),
+            ServicesSection(),
+            AboutSection(),
             ContactSection(),
-            // FooterSection(),
+            FooterSection(),
           ],
         ),
       ),
