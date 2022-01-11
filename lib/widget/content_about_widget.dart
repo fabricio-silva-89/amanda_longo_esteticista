@@ -1,4 +1,7 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
+import 'package:seo_renderer/renderers/text_renderer/text_renderer.dart';
 
 class ContentAboutWiget extends StatelessWidget {
   final String text;
@@ -16,9 +19,12 @@ class ContentAboutWiget extends StatelessWidget {
 
     return SizedBox(
       width: size.width > 1200 ? (size.width - 96) / 2 : size.width - 64,
-      child: Text(
-        text,
-        style: style,
+      child: TextRenderer(
+        element: ParagraphElement(),
+        text: Text(
+          text,
+          style: style,
+        ),
       ),
     );
   }

@@ -18,6 +18,23 @@ class ContactSection extends StatelessWidget {
     }
   }
 
+  void _emailLaunch() async {
+    final Uri params = Uri(
+      scheme: 'mailto',
+      path: 'amandacrislongo@gmail.com',
+      query:
+          'subject=Quero agentar minha consulta&body=Por favor, informe um telefone para contato: ',
+    );
+
+    String url = params.toString();
+
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      print('Could not launch $url');
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -46,12 +63,13 @@ class ContactSection extends StatelessWidget {
               ContactItemWidget(
                 text: '@amandacrislongo',
                 image: WebImages.instagram_contact,
-                onTap: () {},
+                onTap: () =>
+                    _urlLaunch('https://www.instagram.com/amandacrislongo/'),
               ),
               ContactItemWidget(
                 text: 'amandacrislongo@gmail.com',
                 image: WebImages.email,
-                onTap: () {},
+                onTap: _emailLaunch,
               ),
               ContactItemWidget(
                 text: '(17) 99605-1233',

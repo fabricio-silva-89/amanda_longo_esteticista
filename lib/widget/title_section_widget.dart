@@ -1,6 +1,7 @@
-import 'package:flutter/material.dart';
+import 'dart:html';
 
-import 'package:amanda_longo_esteticista/shared/web_colors.dart';
+import 'package:flutter/material.dart';
+import 'package:seo_renderer/seo_renderer.dart';
 
 class TitleSectionWidget extends StatelessWidget {
   final String text;
@@ -22,9 +23,12 @@ class TitleSectionWidget extends StatelessWidget {
       crossAxisAlignment:
           isCenter ? CrossAxisAlignment.center : CrossAxisAlignment.start,
       children: [
-        Text(
-          text,
-          style: style,
+        TextRenderer(
+          element: HeadingElement.h2(),
+          text: Text(
+            text,
+            style: style,
+          ),
         ),
         SizedBox(height: 32),
         Container(

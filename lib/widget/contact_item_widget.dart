@@ -1,12 +1,15 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 
 import 'package:amanda_longo_esteticista/shared/web_colors.dart';
 import 'package:amanda_longo_esteticista/shared/web_text_styles.dart';
+import 'package:seo_renderer/renderers/text_renderer/text_renderer.dart';
 
 class ContactItemWidget extends StatelessWidget {
   final String text;
   final String image;
-  final VoidCallback onTap;
+  final Function() onTap;
 
   const ContactItemWidget({
     Key? key,
@@ -40,9 +43,12 @@ class ContactItemWidget extends StatelessWidget {
               SizedBox(width: 24),
               SizedBox(
                 width: size.width > 800 ? 648 : size.width - 152,
-                child: Text(
-                  text,
-                  style: WebTextStyles.bodyContact,
+                child: TextRenderer(
+                  element: HeadingElement.h3(),
+                  text: Text(
+                    text,
+                    style: WebTextStyles.bodyContact,
+                  ),
                 ),
               ),
             ],

@@ -22,7 +22,7 @@ List<ServicesModel> services = [
     type: "corporal",
     title: "Drenagem Linfática",
     description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt ligula odio, vel iaculis orci sodales ut.",
+        "Uma massagem que melhora o sistema linfático e digestório. Elimina o inchaço, atua no relaxamento do corpo e da mente.",
     image: WebImages.vessel_icon,
   ),
   ServicesModel(
@@ -30,15 +30,15 @@ List<ServicesModel> services = [
     type: "corporal",
     title: "Massagem Relaxante",
     description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt ligula odio, vel iaculis orci sodales ut.",
+        "Atua no relaxamento do corpo, melhora dores da região obtendo um bem estar e leveza.",
     image: WebImages.massage_icon,
   ),
   ServicesModel(
     id: 3,
     type: "corporal",
-    title: "Ventosoterapia",
+    title: "Ventosaterapia",
     description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt ligula odio, vel iaculis orci sodales ut.",
+        "A ventosaterapia é feita no corpo todo, fazendo uma oxigenação do corpo e do sistema linfático, melhorando o sistema digestório, inchaço e dores musculares.",
     image: WebImages.cupping_icon,
   ),
   ServicesModel(
@@ -46,7 +46,7 @@ List<ServicesModel> services = [
     type: "corporal",
     title: "Kinesio Taping",
     description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt ligula odio, vel iaculis orci sodales ut.",
+        "Técnica que auxilia nas dores, diminuindo o inchaço e drenando a região.",
     image: WebImages.tape_icon,
   ),
   ServicesModel(
@@ -54,7 +54,7 @@ List<ServicesModel> services = [
     type: "corporal",
     title: "Pré e Pós Operatório",
     description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt ligula odio, vel iaculis orci sodales ut.",
+        "É feita uma preparação na pela para receber a operação na região. Através da massagem, descongestiona as vias linfáticas, estimulando a circulação e melhorando a oxigenação dos tecidos, promovendo uma melhor cicatrização.",
     image: WebImages.operation_icon,
   ),
   ServicesModel(
@@ -62,7 +62,7 @@ List<ServicesModel> services = [
     type: "corporal",
     title: "Detox",
     description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt ligula odio, vel iaculis orci sodales ut.",
+        "O detox corporal é ideal para quem busca eliminar toxinas, líquidos e inchaços. Melhora o sistema vascular que atua diretamente no sistema linfático.",
     image: WebImages.detox_icon,
   ),
   ServicesModel(
@@ -70,7 +70,7 @@ List<ServicesModel> services = [
     type: "corporal",
     title: "Estrias",
     description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt ligula odio, vel iaculis orci sodales ut.",
+        "São três tipos de procedimentos que utilizo para melhorar a falta de colágeno, atuando no estiramento das estrias, fazendo com que diminui tanto de tamanho quanto de largura.",
     image: WebImages.stretch_marks_icon,
   ),
   ServicesModel(
@@ -78,7 +78,7 @@ List<ServicesModel> services = [
     type: "corporal",
     title: "Sem Celulite",
     description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt ligula odio, vel iaculis orci sodales ut.",
+        "A celulite nada mais é que uma inflamação no tecido adposo. O tratamento ajuda na circulação sanguínea, melhorando o aspecto da pele, atuando na celulite mista e flácida, compacta, edematosa e dura.",
     image: WebImages.cellulitis_icon,
   ),
   ServicesModel(
@@ -86,7 +86,7 @@ List<ServicesModel> services = [
     type: "corporal",
     title: "Sem Flacidez",
     description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt ligula odio, vel iaculis orci sodales ut.",
+        "O aparelho tem um efeito vasodilatador causando um aumento da temperatura na região, atuando na circulação sanguínea e se regenerando nas fibras de colágeno e elasticidade.",
     image: WebImages.fat_icon,
   ),
   ServicesModel(
@@ -94,7 +94,7 @@ List<ServicesModel> services = [
     type: "corporal",
     title: "Modelagem do Bumbum",
     description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt ligula odio, vel iaculis orci sodales ut.",
+        "Através de uma ventosa fazendo a sucção, aumenta a circulação sanguínea, causando uma remodelagem que vem a levantar a região glútea.",
     image: WebImages.butt_icon,
   ),
   ServicesModel(

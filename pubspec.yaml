@@ -30,6 +30,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   google_fonts: ^2.1.0
   url_launcher: ^6.0.17
+  seo_renderer: ^0.3.0
 
 dev_dependencies:
   flutter_test:

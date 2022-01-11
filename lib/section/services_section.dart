@@ -13,13 +13,16 @@ class ServicesSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
+    final items =
+        services.where((element) => element.type == 'corporal').toList();
 
     return Padding(
       padding: const EdgeInsets.all(32.0),
       child: Column(
         children: [
           TitleSectionWidget(
-            text: 'Serviços',
+            // text: 'Serviços',
+            text: 'Serviços Corporais',
             style: WebTextStyles.titleService,
             color: WebColors.text,
           ),
@@ -31,11 +34,19 @@ class ServicesSection extends StatelessWidget {
                     ServiceGroup(
                       title: 'Corporal',
                       group: 'corporal',
+                      start: 0,
+                      end: 5,
                     ),
                     ServiceGroup(
-                      title: 'Facial',
-                      group: 'facial',
+                      title: 'Corporal',
+                      group: 'corporal',
+                      start: 5,
+                      end: 10,
                     ),
+                    // ServiceGroup(
+                    //   title: 'Facial',
+                    //   group: 'facial',
+                    // ),
                   ],
                 )
               : Column(
@@ -43,11 +54,13 @@ class ServicesSection extends StatelessWidget {
                     ServiceGroup(
                       title: 'Corporal',
                       group: 'corporal',
+                      start: 0,
+                      end: 10,
                     ),
-                    ServiceGroup(
-                      title: 'Facial',
-                      group: 'facial',
-                    ),
+                    // ServiceGroup(
+                    //   title: 'Facial',
+                    //   group: 'facial',
+                    // ),
                   ],
                 ),
         ],
