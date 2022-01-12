@@ -5,6 +5,7 @@ import 'package:amanda_longo_esteticista/shared/web_text_styles.dart';
 import 'package:amanda_longo_esteticista/widget/contact_item_widget.dart';
 import 'package:amanda_longo_esteticista/widget/title_section_widget.dart';
 import 'package:flutter/material.dart';
+import 'package:seo_renderer/renderers/link_renderer/link_renderer.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class ContactSection extends StatelessWidget {
@@ -60,29 +61,43 @@ class ContactSection extends StatelessWidget {
                 style: WebTextStyles.titleService,
                 color: WebColors.text,
               ),
-              ContactItemWidget(
-                text: '@amandacrislongo',
-                image: WebImages.instagram_contact,
-                onTap: () =>
-                    _urlLaunch('https://www.instagram.com/amandacrislongo/'),
+              LinkRenderer(
+                anchorText: 'Instagram Amanda Longo Esteticista',
+                link: 'https://www.instagram.com/amandacrislongo/',
+                child: ContactItemWidget(
+                  text: '@amandacrislongo',
+                  image: WebImages.instagram_contact,
+                  onTap: () =>
+                      _urlLaunch('https://www.instagram.com/amandacrislongo/'),
+                ),
               ),
               ContactItemWidget(
                 text: 'amandacrislongo@gmail.com',
                 image: WebImages.email,
                 onTap: _emailLaunch,
               ),
-              ContactItemWidget(
-                text: '(17) 99605-1233',
-                image: WebImages.whatsapp,
-                onTap: () => _urlLaunch(
-                    'https://api.whatsapp.com/send/?phone=5517996051233&text&app_absent=0'),
+              LinkRenderer(
+                anchorText: 'WhatsApp Amanda Longo Esteticista',
+                link:
+                    'https://api.whatsapp.com/send/?phone=5517996051233&text&app_absent=0',
+                child: ContactItemWidget(
+                  text: '(17) 99605-1233',
+                  image: WebImages.whatsapp,
+                  onTap: () => _urlLaunch(
+                      'https://api.whatsapp.com/send/?phone=5517996051233&text&app_absent=0'),
+                ),
               ),
-              ContactItemWidget(
-                text:
-                    'R. Orsini Dias Águiar, 197 - Jardim Alvorada, São José do Rio Preto - SP, 15020-070',
-                image: WebImages.adress,
-                onTap: () => _urlLaunch(
-                    'https://www.google.com/maps/place/R.+Orsini+Dias+Águiar,+197+-+Jardim+Alvorada,+São+José+do+Rio+Preto+-+SP,+15020-070'),
+              LinkRenderer(
+                anchorText: 'Endereço Amanda Longo Esteticista',
+                link:
+                    'https://www.google.com/maps/place/R.+Orsini+Dias+Águiar,+197+-+Jardim+Alvorada,+São+José+do+Rio+Preto+-+SP,+15020-070',
+                child: ContactItemWidget(
+                  text:
+                      'R. Orsini Dias Águiar, 197 - Jardim Alvorada, São José do Rio Preto - SP, 15020-070',
+                  image: WebImages.adress,
+                  onTap: () => _urlLaunch(
+                      'https://www.google.com/maps/place/R.+Orsini+Dias+Águiar,+197+-+Jardim+Alvorada,+São+José+do+Rio+Preto+-+SP,+15020-070'),
+                ),
               ),
             ],
           ),

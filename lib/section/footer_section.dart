@@ -2,6 +2,7 @@ import 'package:amanda_longo_esteticista/shared/web_gradients.dart';
 import 'package:amanda_longo_esteticista/shared/web_images.dart';
 import 'package:amanda_longo_esteticista/shared/web_text_styles.dart';
 import 'package:flutter/material.dart';
+import 'package:seo_renderer/renderers/link_renderer/link_renderer.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class FooterSection extends StatelessWidget {
@@ -35,22 +36,35 @@ class FooterSection extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    InkWell(
-                      onTap: () => _urlLaunch(
-                          'https://www.instagram.com/amandacrislongo/'),
-                      child: Image.asset(WebImages.instagram_icon),
+                    LinkRenderer(
+                      anchorText: 'Instagram Amanda Longo Esteticista',
+                      link: 'https://www.instagram.com/amandacrislongo/',
+                      child: InkWell(
+                        onTap: () => _urlLaunch(
+                            'https://www.instagram.com/amandacrislongo/'),
+                        child: Image.asset(WebImages.instagram_icon),
+                      ),
                     ),
                     SizedBox(width: 24),
-                    InkWell(
-                      onTap: () => _urlLaunch(
-                          'https://www.facebook.com/amandacrislongo/'),
-                      child: Image.asset(WebImages.facebook_icon),
+                    LinkRenderer(
+                      anchorText: 'Facebook Amanda Longo Esteticista',
+                      link: 'https://www.facebook.com/amandacrislongo/',
+                      child: InkWell(
+                        onTap: () => _urlLaunch(
+                            'https://www.facebook.com/amandacrislongo/'),
+                        child: Image.asset(WebImages.facebook_icon),
+                      ),
                     ),
                     SizedBox(width: 24),
-                    InkWell(
-                      onTap: () => _urlLaunch(
-                          'https://www.linkedin.com/in/amanda-longo-980947159/'),
-                      child: Image.asset(WebImages.linkedin_icon),
+                    LinkRenderer(
+                      anchorText: 'Linkedin Amanda Longo Esteticista',
+                      link:
+                          'https://www.linkedin.com/in/amanda-longo-980947159/',
+                      child: InkWell(
+                        onTap: () => _urlLaunch(
+                            'https://www.linkedin.com/in/amanda-longo-980947159/'),
+                        child: Image.asset(WebImages.linkedin_icon),
+                      ),
                     ),
                   ],
                 ),
@@ -61,12 +75,16 @@ class FooterSection extends StatelessWidget {
                     ? MainAxisAlignment.end
                     : MainAxisAlignment.center,
                 children: [
-                  InkWell(
-                    onTap: () =>
-                        _urlLaunch('https://www.linkedin.com/in/fabrício-s/'),
-                    child: Text(
-                      "Desenvolvido por Fabrício Silva",
-                      style: WebTextStyles.header,
+                  LinkRenderer(
+                    anchorText: 'Linkedin Fabrício Silva',
+                    link: 'https://www.linkedin.com/in/fabrício-s/',
+                    child: InkWell(
+                      onTap: () =>
+                          _urlLaunch('https://www.linkedin.com/in/fabrício-s/'),
+                      child: Text(
+                        "Desenvolvido por Fabrício Silva",
+                        style: WebTextStyles.header,
+                      ),
                     ),
                   ),
                 ],
