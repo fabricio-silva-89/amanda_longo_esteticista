@@ -34,7 +34,7 @@ jobs:
       - name: Build Web
         run: fluter/bin/flutter build web
       - name: Deploy hosting on firebase
-        uses: w9jds/firebase-action@main
+        uses: w9jds/firebase-action@v2.0.0
         with:
           args: deploy --only hosting
         env:
