@@ -20,14 +20,14 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-#       - name: Basic settings
-#         run: |
-#           apt update
-#           apt-get install curl -y
-#           apt-get install git -y
-#           apt-get install unzip y
-#           apt-get install zip -y
-#           apt-get install xz-utils
+      - name: Basic settings
+        run: |
+          apt update
+          apt-get install curl -y
+          apt-get install git -y
+          apt-get install unzip -y
+          apt-get install zip -y
+          apt-get install xz-utils
       - name: Mount Flutter
         run: git clone -b stable http://github.com/flutter/flutter.git
       - name: Show version
