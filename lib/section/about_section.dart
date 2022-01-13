@@ -18,7 +18,7 @@ class AboutSection extends StatelessWidget {
       width: size.width,
       color: WebColorsOpacity.primary25,
       child: Padding(
-        padding: const EdgeInsets.all(32.0),
+        padding: const EdgeInsets.symmetric(vertical: 32.0, horizontal: 16),
         child: size.width > 1200
             ? Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,

@@ -1,9 +1,4 @@
-// ignore_for_file: avoid_web_libraries_in_flutter
-
-import 'dart:html';
-
 import 'package:flutter/material.dart';
-import 'package:seo_renderer/seo_renderer.dart';
 
 class TitleSectionWidget extends StatelessWidget {
   final String text;
@@ -25,12 +20,10 @@ class TitleSectionWidget extends StatelessWidget {
       crossAxisAlignment:
           isCenter ? CrossAxisAlignment.center : CrossAxisAlignment.start,
       children: [
-        TextRenderer(
-          element: HeadingElement.h2(),
-          text: Text(
-            text,
-            style: style,
-          ),
+        Text(
+          text,
+          style: style,
+          textAlign: TextAlign.center,
         ),
         SizedBox(height: 32),
         Container(

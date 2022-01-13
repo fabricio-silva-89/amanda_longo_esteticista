@@ -12,7 +12,7 @@ class ServicesSection extends StatelessWidget {
     final size = MediaQuery.of(context).size;
 
     return Padding(
-      padding: const EdgeInsets.all(32.0),
+      padding: const EdgeInsets.symmetric(vertical: 32.0, horizontal: 16.0),
       child: Column(
         children: [
           TitleSectionWidget(

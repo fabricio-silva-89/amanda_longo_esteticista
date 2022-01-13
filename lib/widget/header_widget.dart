@@ -1,13 +1,8 @@
-import 'dart:html';
-
 import 'package:amanda_longo_esteticista/shared/web_images.dart';
 import 'package:amanda_longo_esteticista/shared/web_text_styles.dart';
 import 'package:flutter/material.dart';
 
 import 'package:amanda_longo_esteticista/shared/web_gradients.dart';
-import 'package:seo_renderer/renderers/image_renderer/image_renderer.dart';
-import 'package:seo_renderer/renderers/link_renderer/link_renderer.dart';
-import 'package:seo_renderer/renderers/text_renderer/text_renderer.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class HeaderWidget extends StatelessWidget {
@@ -39,20 +34,14 @@ class HeaderWidget extends StatelessWidget {
             Expanded(
               child: Row(
                 children: [
-                  TextRenderer(
-                    element: HeadingElement.h6(),
-                    text: Text(
-                      "amandacrislongo@gmail.com",
-                      style: WebTextStyles.header,
-                    ),
+                  Text(
+                    "amandacrislongo@gmail.com",
+                    style: WebTextStyles.header,
                   ),
                   SizedBox(width: 24),
-                  TextRenderer(
-                    element: HeadingElement.h6(),
-                    text: Text(
-                      "(17) 99605-1233",
-                      style: WebTextStyles.header,
-                    ),
+                  Text(
+                    "(17) 99605-1233",
+                    style: WebTextStyles.header,
                   ),
                 ],
               ),
@@ -61,34 +50,22 @@ class HeaderWidget extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  LinkRenderer(
-                    anchorText: 'Instagram Amanda Longo Esteticista',
-                    link: 'https://www.instagram.com/amandacrislongo/',
-                    child: InkWell(
-                      onTap: () => _urlLaunch(
-                          'https://www.instagram.com/amandacrislongo/'),
-                      child: Image.asset(WebImages.instagram_icon),
-                    ),
+                  InkWell(
+                    onTap: () => _urlLaunch(
+                        'https://www.instagram.com/amandacrislongo/'),
+                    child: Image.asset(WebImages.instagram_icon),
                   ),
                   SizedBox(width: 24),
-                  LinkRenderer(
-                    anchorText: 'Facebook Amanda Longo Esteticista',
-                    link: 'https://www.facebook.com/amandacrislongo/',
-                    child: InkWell(
-                      onTap: () => _urlLaunch(
-                          'https://www.facebook.com/amandacrislongo/'),
-                      child: Image.asset(WebImages.facebook_icon),
-                    ),
+                  InkWell(
+                    onTap: () =>
+                        _urlLaunch('https://www.facebook.com/amandacrislongo/'),
+                    child: Image.asset(WebImages.facebook_icon),
                   ),
                   SizedBox(width: 24),
-                  LinkRenderer(
-                    anchorText: 'Linkedin Amanda Longo Esteticista',
-                    link: 'https://www.linkedin.com/in/amanda-longo-980947159/',
-                    child: InkWell(
-                      onTap: () => _urlLaunch(
-                          'https://www.linkedin.com/in/amanda-longo-980947159/'),
-                      child: Image.asset(WebImages.linkedin_icon),
-                    ),
+                  InkWell(
+                    onTap: () => _urlLaunch(
+                        'https://www.linkedin.com/in/amanda-longo-980947159/'),
+                    child: Image.asset(WebImages.linkedin_icon),
                   ),
                 ],
               ),

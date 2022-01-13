@@ -1,12 +1,7 @@
-// ignore_for_file: avoid_web_libraries_in_flutter
-
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 
 import 'package:amanda_longo_esteticista/shared/web_colors.dart';
 import 'package:amanda_longo_esteticista/shared/web_text_styles.dart';
-import 'package:seo_renderer/renderers/text_renderer/text_renderer.dart';
 
 class ContactItemWidget extends StatelessWidget {
   final String text;
@@ -45,12 +40,9 @@ class ContactItemWidget extends StatelessWidget {
               SizedBox(width: 24),
               SizedBox(
                 width: size.width > 800 ? 648 : size.width - 152,
-                child: TextRenderer(
-                  element: HeadingElement.h3(),
-                  text: Text(
-                    text,
-                    style: WebTextStyles.bodyContact,
-                  ),
+                child: Text(
+                  text,
+                  style: WebTextStyles.bodyContact,
                 ),
               ),
             ],
