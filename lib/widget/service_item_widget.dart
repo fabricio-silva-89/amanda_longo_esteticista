@@ -18,38 +18,47 @@ class ServiceItemWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
 
-    return Row(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Container(
-          width: 64,
-          height: 64,
-          decoration: BoxDecoration(
-            color: WebColors.secondary,
-            borderRadius: BorderRadius.circular(32),
-            image: DecorationImage(
-              image: AssetImage(image),
+    return SizedBox(
+      width: size.width > 430 ? 430 : size.width,
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Container(
+            width: 64,
+            height: 64,
+            decoration: BoxDecoration(
+              color: WebColors.secondary,
+              borderRadius: BorderRadius.circular(32),
+              image: DecorationImage(
+                image: AssetImage(image),
+              ),
             ),
           ),
-        ),
-        SizedBox(width: 24),
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            Text(
-              title,
-              style: WebTextStyles.itemService,
+          SizedBox(width: 16),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Text(
+                  title,
+                  style: WebTextStyles.itemService,
+                ),
+                SizedBox(height: 8),
+                // SizedBox(
+                //   width: size.width > 1200 ? (1100 - 240) / 2 : (size.width - 240),
+                //   child: Text(description, style: WebTextStyles.bodyService),
+                // ),
+                Text(
+                  description,
+                  style: WebTextStyles.bodyService,
+                ),
+                SizedBox(height: 32),
+              ],
             ),
-            SizedBox(height: 8),
-            SizedBox(
-              width: size.width > 1200 ? (1100 - 240) / 2 : (size.width - 240),
-              child: Text(description, style: WebTextStyles.bodyService),
-            ),
-            SizedBox(height: 32),
-          ],
-        ),
-      ],
+          ),
+        ],
+      ),
     );
   }
 }

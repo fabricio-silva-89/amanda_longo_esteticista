@@ -66,17 +66,20 @@ class ContactSection extends StatelessWidget {
                 onTap: () =>
                     _urlLaunch('https://www.instagram.com/amandacrislongo/'),
               ),
+              SizedBox(height: 24),
               ContactItemWidget(
                 text: 'amandacrislongo@gmail.com',
                 image: WebImages.email,
                 onTap: _emailLaunch,
               ),
+              SizedBox(height: 24),
               ContactItemWidget(
                 text: '(17) 99605-1233',
                 image: WebImages.whatsapp,
                 onTap: () => _urlLaunch(
                     'https://api.whatsapp.com/send/?phone=5517996051233&text&app_absent=0'),
               ),
+              SizedBox(height: 24),
               ContactItemWidget(
                 text:
                     'R. Orsini Dias Águiar, 197 - Jardim Alvorada, São José do Rio Preto - SP, 15020-070',
@@ -84,6 +87,7 @@ class ContactSection extends StatelessWidget {
                 onTap: () => _urlLaunch(
                     'https://www.google.com/maps/place/R.+Orsini+Dias+Águiar,+197+-+Jardim+Alvorada,+São+José+do+Rio+Preto+-+SP,+15020-070'),
               ),
+              SizedBox(height: 24),
             ],
           ),
         ),

@@ -15,7 +15,7 @@ class ContentAboutWiget extends StatelessWidget {
     final size = MediaQuery.of(context).size;
 
     return SizedBox(
-      width: size.width > 1200 ? (size.width - 96) / 2 : size.width - 64,
+      width: size.width > 1200 ? (size.width - 64) / 2 : size.width - 32,
       child: Text(
         text,
         style: style,

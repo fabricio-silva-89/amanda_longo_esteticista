@@ -19,37 +19,41 @@ class ContactItemWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
 
-    return Column(
-      children: [
-        InkWell(
-          onTap: onTap,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Container(
-                width: 64,
-                height: 64,
-                decoration: BoxDecoration(
-                  color: WebColors.secondary,
-                  borderRadius: BorderRadius.circular(32),
-                  image: DecorationImage(
-                    image: AssetImage(image),
-                  ),
+    return InkWell(
+      onTap: onTap,
+      child: SizedBox(
+        width: size.width > 800 ? 800 : size.width,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Container(
+              width: 64,
+              height: 64,
+              decoration: BoxDecoration(
+                color: WebColors.secondary,
+                borderRadius: BorderRadius.circular(32),
+                image: DecorationImage(
+                  image: AssetImage(image),
                 ),
               ),
-              SizedBox(width: 24),
-              SizedBox(
-                width: size.width > 800 ? 648 : size.width - 152,
-                child: Text(
-                  text,
-                  style: WebTextStyles.bodyContact,
-                ),
+            ),
+            SizedBox(width: 24),
+            Expanded(
+              child: Text(
+                text,
+                style: WebTextStyles.bodyContact,
               ),
-            ],
-          ),
+            ),
+            // SizedBox(
+            //   width: size.width > 800 ? 648 : size.width - 152,
+            //   child: Text(
+            //     text,
+            //     style: WebTextStyles.bodyContact,
+            //   ),
+            // ),
+          ],
         ),
-        SizedBox(height: 24),
-      ],
+      ),
     );
   }
 }

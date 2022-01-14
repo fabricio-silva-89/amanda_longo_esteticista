@@ -22,7 +22,7 @@ class ServiceGroup extends StatelessWidget {
     final size = MediaQuery.of(context).size;
 
     return Column(
-      crossAxisAlignment: size.width > 1200
+      crossAxisAlignment: size.width > 1000
           ? CrossAxisAlignment.start
           : CrossAxisAlignment.center,
       children: [
