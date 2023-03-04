@@ -18,8 +18,7 @@ class ServicesSection extends StatelessWidget {
         child: Column(
           children: [
             TitleSectionWidget(
-              // text: 'Serviços',
-              text: 'Serviços Corporais',
+              text: 'SERVIÇOS CORPORAIS',
               style: WebTextStyles.titleService,
               color: WebColors.text,
             ),

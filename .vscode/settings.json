@@ -1,0 +1,9 @@
+{
+  "dart.flutterSdkPath": "/Users/fabricio/fvm/versions/3.7.6",
+  "search.exclude": {
+    "**/.fvm": true
+  },
+  "files.watcherExclude": {
+    "**/.fvm": true
+  }
+}

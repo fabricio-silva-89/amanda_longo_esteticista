@@ -16,7 +16,7 @@ class WebBody extends StatelessWidget {
     return Scaffold(
       appBar: size.width > 800
           ? PreferredSize(
-              preferredSize: Size.fromHeight(30),
+              preferredSize: Size.fromHeight(48),
               child: HeaderWidget(),
             )
           : null,

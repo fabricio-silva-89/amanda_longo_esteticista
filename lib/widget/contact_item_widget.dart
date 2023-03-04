@@ -1,7 +1,6 @@
-import 'package:flutter/material.dart';
-
 import 'package:amanda_longo_esteticista/shared/web_colors.dart';
 import 'package:amanda_longo_esteticista/shared/web_text_styles.dart';
+import 'package:flutter/material.dart';
 
 class ContactItemWidget extends StatelessWidget {
   final String text;
@@ -30,7 +29,7 @@ class ContactItemWidget extends StatelessWidget {
               width: 64,
               height: 64,
               decoration: BoxDecoration(
-                color: WebColors.secondary,
+                color: WebColors.primary,
                 borderRadius: BorderRadius.circular(32),
                 image: DecorationImage(
                   image: AssetImage(image),
