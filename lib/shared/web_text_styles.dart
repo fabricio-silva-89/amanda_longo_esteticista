@@ -1,60 +1,68 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 import 'web_colors.dart';
 
 class WebTextStyles {
-  static final titleHome = GoogleFonts.libreBaskerville(
+  static final titleHome = TextStyle(
+    fontFamily: 'Agrandir',
     fontSize: 52,
-    fontWeight: FontWeight.w600,
+    fontWeight: FontWeight.w400,
     color: WebColors.secondary,
   );
 
-  static final titleAbout = GoogleFonts.libreBaskerville(
+  static final titleAbout = TextStyle(
+    fontFamily: 'Agrandir',
     fontSize: 52,
-    fontWeight: FontWeight.w600,
-    color: WebColors.secondary,
+    fontWeight: FontWeight.w400,
+    color: WebColors.white,
   );
 
-  static final titleService = GoogleFonts.libreBaskerville(
+  static final titleService = TextStyle(
+    fontFamily: 'Agrandir',
     fontSize: 52,
-    fontWeight: FontWeight.w600,
+    fontWeight: FontWeight.w400,
     color: WebColors.text,
   );
 
-  static final subtitleService = GoogleFonts.poppins(
+  static final subtitleService = TextStyle(
+    fontFamily: 'Agrandir',
     fontSize: 36,
-    fontWeight: FontWeight.w600,
+    fontWeight: FontWeight.w400,
     color: WebColors.secondary,
   );
 
-  static final itemService = GoogleFonts.poppins(
+  static final itemService = TextStyle(
+    fontFamily: 'Agrandir',
     fontSize: 24,
-    fontWeight: FontWeight.w600,
-    color: WebColors.secondary,
+    fontWeight: FontWeight.w400,
+    color: WebColors.primary,
   );
 
-  static final bodyService = GoogleFonts.poppins(
+  static final bodyService = TextStyle(
+    fontFamily: 'Agrandir',
     fontSize: 16,
-    fontWeight: FontWeight.normal,
+    fontWeight: FontWeight.w400,
     color: WebColors.text,
   );
 
-  static final bodyContact = GoogleFonts.poppins(
+  static final bodyContact = TextStyle(
+    fontFamily: 'Agrandir',
     fontSize: 20,
-    fontWeight: FontWeight.bold,
+    fontWeight: FontWeight.w400,
     color: WebColors.text,
   );
 
-  static final bodyAbout = GoogleFonts.poppins(
+  static final bodyAbout = TextStyle(
+    fontFamily: 'Agrandir',
     fontSize: 16,
-    fontWeight: FontWeight.normal,
-    color: WebColors.secondary,
+    fontWeight: FontWeight.w400,
+    color: WebColors.white,
   );
 
-  static final header = GoogleFonts.poppins(
-    fontSize: 12,
-    fontWeight: FontWeight.normal,
+  static final header = TextStyle(
+    fontFamily: 'Agrandir',
+    fontSize: 14,
+    fontWeight: FontWeight.w400,
     color: WebColors.white,
   );
 }

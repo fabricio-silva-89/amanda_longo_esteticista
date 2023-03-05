@@ -1,16 +1,15 @@
+import 'package:amanda_longo_esteticista/shared/web_colors.dart';
 import 'package:amanda_longo_esteticista/shared/web_images.dart';
 import 'package:amanda_longo_esteticista/shared/web_text_styles.dart';
 import 'package:flutter/material.dart';
-
-import 'package:amanda_longo_esteticista/shared/web_gradients.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class HeaderWidget extends StatelessWidget {
   const HeaderWidget({Key? key}) : super(key: key);
 
   void _urlLaunch(String url) async {
-    if (await canLaunch(url)) {
-      await launch(url);
+    if (await canLaunchUrl(Uri.parse(url))) {
+      await launchUrl(Uri.parse(url));
     } else {
       throw 'Could not launch $url';
     }
@@ -24,9 +23,7 @@ class HeaderWidget extends StatelessWidget {
     return Container(
       width: size.width,
       height: height,
-      decoration: BoxDecoration(
-        gradient: WebGradients.linear,
-      ),
+      color: WebColors.primary,
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 32),
         child: Row(
@@ -53,19 +50,23 @@ class HeaderWidget extends StatelessWidget {
                   InkWell(
                     onTap: () => _urlLaunch(
                         'https://www.instagram.com/amandacrislongo/'),
-                    child: Image.asset(WebImages.instagram_icon),
+                    child: Image.asset(
+                      WebImages.instagram_icon,
+                    ),
                   ),
                   SizedBox(width: 24),
                   InkWell(
-                    onTap: () =>
-                        _urlLaunch('https://www.facebook.com/amandacrislongo/'),
+                    onTap: () => _urlLaunch(
+                        'https://www.facebook.com/amanda.longo.399/'),
                     child: Image.asset(WebImages.facebook_icon),
                   ),
                   SizedBox(width: 24),
                   InkWell(
                     onTap: () => _urlLaunch(
                         'https://www.linkedin.com/in/amanda-longo-980947159/'),
-                    child: Image.asset(WebImages.linkedin_icon),
+                    child: Image.asset(
+                      WebImages.linkedin_icon,
+                    ),
                   ),
                 ],
               ),

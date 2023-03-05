@@ -1,4 +1,4 @@
-import 'package:amanda_longo_esteticista/shared/web_gradients.dart';
+import 'package:amanda_longo_esteticista/shared/web_colors.dart';
 import 'package:amanda_longo_esteticista/shared/web_images.dart';
 import 'package:amanda_longo_esteticista/shared/web_text_styles.dart';
 import 'package:flutter/material.dart';
@@ -8,8 +8,8 @@ class FooterSection extends StatelessWidget {
   const FooterSection({Key? key}) : super(key: key);
 
   void _urlLaunch(String url) async {
-    if (await canLaunch(url)) {
-      await launch(url);
+    if (await canLaunchUrl(Uri.parse(url))) {
+      await launchUrl(Uri.parse(url));
     } else {
       throw 'Could not launch $url';
     }
@@ -23,9 +23,7 @@ class FooterSection extends StatelessWidget {
       width: size.width,
       height: 60,
       alignment: Alignment.center,
-      decoration: BoxDecoration(
-        gradient: WebGradients.linearLeft,
-      ),
+      color: WebColors.primary,
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16.0),
         child: Row(

@@ -27,7 +27,7 @@ class ServiceItemWidget extends StatelessWidget {
             width: 64,
             height: 64,
             decoration: BoxDecoration(
-              color: WebColors.secondary,
+              color: WebColors.primary,
               borderRadius: BorderRadius.circular(32),
               image: DecorationImage(
                 image: AssetImage(image),

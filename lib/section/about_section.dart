@@ -1,6 +1,5 @@
 import 'package:amanda_longo_esteticista/models/about_model.dart';
 import 'package:amanda_longo_esteticista/shared/web_colors.dart';
-import 'package:amanda_longo_esteticista/shared/web_colors_opacity.dart';
 import 'package:amanda_longo_esteticista/shared/web_images.dart';
 import 'package:amanda_longo_esteticista/shared/web_text_styles.dart';
 import 'package:amanda_longo_esteticista/widget/content_about_widget.dart';
@@ -16,7 +15,7 @@ class AboutSection extends StatelessWidget {
 
     return Container(
       width: size.width,
-      color: WebColorsOpacity.primary25,
+      color: WebColors.primary,
       child: Padding(
         padding: const EdgeInsets.symmetric(vertical: 32.0, horizontal: 16),
         child: size.width > 1200
@@ -29,7 +28,7 @@ class AboutSection extends StatelessWidget {
                       TitleSectionWidget(
                         text: 'Amanda Longo',
                         style: WebTextStyles.titleAbout,
-                        color: WebColors.secondary,
+                        color: WebColors.white,
                         isCenter: false,
                       ),
                       ContentAboutWiget(

@@ -11,8 +11,8 @@ class ContactSection extends StatelessWidget {
   const ContactSection({Key? key}) : super(key: key);
 
   void _urlLaunch(String url) async {
-    if (await canLaunch(url)) {
-      await launch(url);
+    if (await canLaunchUrl(Uri.parse(url))) {
+      await launchUrl(Uri.parse(url));
     } else {
       throw 'Could not launch $url';
     }
@@ -28,8 +28,8 @@ class ContactSection extends StatelessWidget {
 
     String url = params.toString();
 
-    if (await canLaunch(url)) {
-      await launch(url);
+    if (await canLaunchUrl(Uri.parse(url))) {
+      await launchUrl(Uri.parse(url));
     } else {
       print('Could not launch $url');
     }
@@ -81,11 +81,10 @@ class ContactSection extends StatelessWidget {
               ),
               SizedBox(height: 24),
               ContactItemWidget(
-                text:
-                    'R. Orsini Dias Águiar, 197 - Jardim Alvorada, São José do Rio Preto - SP, 15020-070',
+                text: 'R. Paulo Guzo, 1584, Tabapuã - SP, 15880-000',
                 image: WebImages.adress,
                 onTap: () => _urlLaunch(
-                    'https://www.google.com/maps/place/R.+Orsini+Dias+Águiar,+197+-+Jardim+Alvorada,+São+José+do+Rio+Preto+-+SP,+15020-070'),
+                    'https://www.google.com/maps/place/R.+Paulo+Guzo,+1584,+Tabapu%C3%A3+-+SP,+15880-000'),
               ),
               SizedBox(height: 24),
             ],
