@@ -25,7 +25,7 @@ class HomeSection extends StatelessWidget {
           padding: const EdgeInsets.symmetric(vertical: 32.0, horizontal: 16.0),
           child: Image.asset(
             WebImages.logo,
-            width: size.width > 800 ? 736 : size.width - 64.0,
+            width: size.width > 800 ? 736 : size.width,
           ),
         ),
       ),
